@@ -1,74 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Rsinha.github.io : webpage" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Rsinha.github.io</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rohit Sinha</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/rsinha">View on GitHub</a>
-
-          <h1 id="project_title">Rsinha.github.io</h1>
-          <h2 id="project_tagline">webpage</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+    <div class="wrapper">
+      <header>
+        <h1>Rohit Sinha</h1>
+        <p>research homepage</p>
+        <p class="view"><a href="http://github.com/rsinha">Find me on GitHub <small>rsinha</small></a></p>
+        <p class="view"><a href="https://www.codeplex.com/site/users/view/rsinha">Find me on Codeplex <small>rsinha</small></a></p>
+        <!--ul>
+          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
+        </ul-->
+      </header>
+      <section>
+        <!--h1>Let&rsquo;s Test Some Markup</h1-->
+        <h1>Research Interests</h1>
+        <!--p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p-->
+        <p>I work on applying mathematical proof techniques to reason about software security. I care about proving that a security-critical program demonstrates end-to-end security by modeling programs in a formal system (e.g. first-order logic) and using formal analysis (e.g. SMT solving, type checking) to prove an absence of errors.</p>
+        <h2>Publications</h2>
+        <p>In chronological order:</p>
+        <ol>
+        <li><p><a href="http://uclid.eecs.berkeley.edu/cloudproxy/paper.pdf">Formal Modeling and Verification of CloudProxy</a></p>
+        <p> Services running in the cloud face threats from several parties, including 
+malicious clients, administrators, and external attackers. 
+CloudProxy is a recently-proposed framework for secure deployment of cloud
+applications. In this work, we present the first formal model of CloudProxy, including
+a formal specification of desired security properties. We model CloudProxy as
+a transition system in the UCLID modeling language, using term-level abstraction.
+Our formal specification includes both safety and non-interference properties.
+We use induction to prove these properties, employing a back-end SMT-based
+verification engine. Further, we structure our proof as an &rsquo;&rsquo;assurance case&rsquo;&rsquo;, showing
+how we decompose the proof into various lemmas, and listing all assumptions and 
+axioms employed. We also perform some limited model validation to gain assurance 
+that the formal model correctly captures behaviors of the implementation.</p>
+        <li><p><a href="http://research.microsoft.com/pubs/208801/paper.pdf">Automatic Rootcausing for Program Equivalence Failures</a></p>
+<p>
+Equivalence checking of imperative programs has several applications including compiler validation and cross-version verification. In this paper, we formalize a precise notion of it rootcause for a given counterexample to equivalence checking. Our notion of rootcause is inspired by work on program repair, but adapted to the case of two similar programs. By exploiting the semantic similarity between two programs, our formulation avoids the need for a template of fixes or the need for a complete repair to ensure equivalence, unlike existing works on program repair. We provide progressively weaker checks for detecting rootcauses that can be applicable even when multiple fixes are required to make the two programs equivalent. We provide optimizations based on Maximum Satisfiability (MAXSAT) and binary search to prune the space of candidate fixes. We have implemented the techniques and provide extensive evaluation on a set of real-world cross-version compiler validation benchmarks.
+</p>
+        <li><p><a href="http://www.eecs.berkeley.edu/~sseshia/pubdir/memocode13-ssmv.pdf">Symbolic Software Model Validation</a></p>
+        <p>
+Modeling is the crucial first step in formal verification. Some models are constructed by humans from source code, while others are extracted automatically by tools. Regardless of how a model is constructed, verification is only as good as the model; therefore, it is essential to validate the model against the implementation it represents. In this paper we present two complementary approaches to software model validation. The first, data-centric model validation, checks that, for data structures relevant to the property being verified, all operations that update these data structures are captured in the model. The second, operation-centric model validation, checks that each operation being modeled is correctly simulated by the model. Both techniques are based on a combination of symbolic execution and satisfiability modulo theories (SMT) solving. We demonstrate the application of our methods on several case studies, including the address translation logic in the Bochs x86 emulator, the Berkeley Packet Filter, a TCAS benchmark suite, the FTP server from GNU Inetutils, and a component of the XMHF hypervisor.
+        </p>
+        <li><p><a href="http://www.eecs.berkeley.edu/~sseshia/pubdir/fmcad12-s2w.pdf">Verification with Small and Short Worlds</a></p>
+        <p>
+We consider the verification of safety properties in systems with large
+arrays and data structures. Such systems are common at the low levels of
+software stacks; examples are hypervisors and CPU emulators. The very
+large data structures in such systems (e.g., address-translation tables
+and other caches) make automated verification based on straightforward
+state-space exploration infeasible.  We present <em>S2W</em>, a new 
+abstraction-based model-checking methodology to facilitate automated
+verification of such systems.  As a first step, inductive invariant
+checking is performed.  If that fails, we compute an abstraction of the 
+original system by precisely modeling only a subset of state variables
+while allowing the rest of the state to evolve arbitrarily at each step.
+This subset of the state constitutes a &rsquo;&rsquo;small world&rsquo;&rsquo; hypothesis, and 
+is extracted from the property.  Finally, we verify the safety property
+on the abstract model using bounded model checking.  We ensure the 
+verification is sound by first computing a bound on the reachability
+diameter of the abstract model. For this computation, we developed a set 
+of heuristics that we term the &rsquo;&rsquo;short world&rsquo;&rsquo; approach.
+We present several case
+studies, including verification of the address translation logic in the
+Bochs x86 emulator, and verification of security properties of several hypervisor models.
+        </p>
+        </ol>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>This page is maintained by <a href="http://www.eecs.berkeley.edu/~rsinha/">Rohit Sinha</a>, a PhD candidate in Computer Science at the University of California, Berkeley.</p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
-    
-
+    <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
