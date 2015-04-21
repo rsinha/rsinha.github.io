@@ -40,49 +40,9 @@
         <p>In reverse chronological order:</p>
         <ol>
         <li><p><a href="http://uclid.eecs.berkeley.edu/cloudproxy/paper.pdf">Formal Modeling and Verification of CloudProxy</a></p>
-        <p> Services running in the cloud face threats from several parties, including 
-malicious clients, administrators, and external attackers. 
-CloudProxy is a recently-proposed framework for secure deployment of cloud
-applications. In this work, we present the first formal model of CloudProxy, including
-a formal specification of desired security properties. We model CloudProxy as
-a transition system in the UCLID modeling language, using term-level abstraction.
-Our formal specification includes both safety and non-interference properties.
-We use induction to prove these properties, employing a back-end SMT-based
-verification engine. Further, we structure our proof as an &rsquo;&rsquo;assurance case&rsquo;&rsquo;, showing
-how we decompose the proof into various lemmas, and listing all assumptions and 
-axioms employed. We also perform some limited model validation to gain assurance 
-that the formal model correctly captures behaviors of the implementation.</p>
         <li><p><a href="http://research.microsoft.com/pubs/208801/paper.pdf">Automatic Rootcausing for Program Equivalence Failures</a></p>
-<p>
-Equivalence checking of imperative programs has several applications including compiler validation and cross-version verification. In this paper, we formalize a precise notion of it rootcause for a given counterexample to equivalence checking. Our notion of rootcause is inspired by work on program repair, but adapted to the case of two similar programs. By exploiting the semantic similarity between two programs, our formulation avoids the need for a template of fixes or the need for a complete repair to ensure equivalence, unlike existing works on program repair. We provide progressively weaker checks for detecting rootcauses that can be applicable even when multiple fixes are required to make the two programs equivalent. We provide optimizations based on Maximum Satisfiability (MAXSAT) and binary search to prune the space of candidate fixes. We have implemented the techniques and provide extensive evaluation on a set of real-world cross-version compiler validation benchmarks.
-</p>
         <li><p><a href="http://www.eecs.berkeley.edu/~sseshia/pubdir/memocode13-ssmv.pdf">Symbolic Software Model Validation</a></p>
-        <p>
-Modeling is the crucial first step in formal verification. Some models are constructed by humans from source code, while others are extracted automatically by tools. Regardless of how a model is constructed, verification is only as good as the model; therefore, it is essential to validate the model against the implementation it represents. In this paper we present two complementary approaches to software model validation. The first, data-centric model validation, checks that, for data structures relevant to the property being verified, all operations that update these data structures are captured in the model. The second, operation-centric model validation, checks that each operation being modeled is correctly simulated by the model. Both techniques are based on a combination of symbolic execution and satisfiability modulo theories (SMT) solving. We demonstrate the application of our methods on several case studies, including the address translation logic in the Bochs x86 emulator, the Berkeley Packet Filter, a TCAS benchmark suite, the FTP server from GNU Inetutils, and a component of the XMHF hypervisor.
-        </p>
         <li><p><a href="http://www.eecs.berkeley.edu/~sseshia/pubdir/fmcad12-s2w.pdf">Verification with Small and Short Worlds</a></p>
-        <p>
-We consider the verification of safety properties in systems with large
-arrays and data structures. Such systems are common at the low levels of
-software stacks; examples are hypervisors and CPU emulators. The very
-large data structures in such systems (e.g., address-translation tables
-and other caches) make automated verification based on straightforward
-state-space exploration infeasible.  We present <em>S2W</em>, a new 
-abstraction-based model-checking methodology to facilitate automated
-verification of such systems.  As a first step, inductive invariant
-checking is performed.  If that fails, we compute an abstraction of the 
-original system by precisely modeling only a subset of state variables
-while allowing the rest of the state to evolve arbitrarily at each step.
-This subset of the state constitutes a &rsquo;&rsquo;small world&rsquo;&rsquo; hypothesis, and 
-is extracted from the property.  Finally, we verify the safety property
-on the abstract model using bounded model checking.  We ensure the 
-verification is sound by first computing a bound on the reachability
-diameter of the abstract model. For this computation, we developed a set 
-of heuristics that we term the &rsquo;&rsquo;short world&rsquo;&rsquo; approach.
-We present several case
-studies, including verification of the address translation logic in the
-Bochs x86 emulator, and verification of security properties of several hypervisor models.
-        </p>
         </ol>
       </section>
       <footer>
